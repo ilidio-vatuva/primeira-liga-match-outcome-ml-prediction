@@ -1,0 +1,62 @@
+{
+  "model": "LogisticRegression(multinomial)",
+  "n_train": 3060,
+  "n_test": 139,
+  "classes": [
+    "A",
+    "D",
+    "H"
+  ],
+  "classification_report": {
+    "A": {
+      "precision": 0.6444444444444445,
+      "recall": 0.5686274509803921,
+      "f1-score": 0.6041666666666666,
+      "support": 51.0
+    },
+    "D": {
+      "precision": 0.30612244897959184,
+      "recall": 0.39473684210526316,
+      "f1-score": 0.3448275862068966,
+      "support": 38.0
+    },
+    "H": {
+      "precision": 0.5777777777777777,
+      "recall": 0.52,
+      "f1-score": 0.5473684210526316,
+      "support": 50.0
+    },
+    "accuracy": 0.5035971223021583,
+    "macro avg": {
+      "precision": 0.509448223733938,
+      "recall": 0.49445476436188507,
+      "f1-score": 0.49878755797539825,
+      "support": 139.0
+    },
+    "weighted avg": {
+      "precision": 0.527972723861727,
+      "recall": 0.5035971223021583,
+      "f1-score": 0.5128371894136234,
+      "support": 139.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      29,
+      15,
+      7
+    ],
+    [
+      11,
+      15,
+      12
+    ],
+    [
+      5,
+      19,
+      26
+    ]
+  ],
+  "notes": "Temporal split by season if available; otherwise last 20% of rows.",
+  "log_loss": 0.8979399987619423
+}

@@ -1,0 +1,69 @@
+{
+  "model": "odds_only_logreg",
+  "split": "season_last_as_test(2025/2026)",
+  "features": [
+    "AvgH",
+    "AvgD",
+    "AvgA"
+  ],
+  "classes": [
+    "A",
+    "D",
+    "H"
+  ],
+  "n_train": 3060,
+  "n_test": 139,
+  "accuracy": 0.5539568345323741,
+  "f1_macro": 0.4286124264600373,
+  "log_loss": 0.9011002218605887,
+  "classification_report": {
+    "A": {
+      "precision": 0.64,
+      "recall": 0.6274509803921569,
+      "f1-score": 0.6336633663366337,
+      "support": 51.0
+    },
+    "D": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 38.0
+    },
+    "H": {
+      "precision": 0.5113636363636364,
+      "recall": 0.9,
+      "f1-score": 0.6521739130434783,
+      "support": 50.0
+    },
+    "accuracy": 0.5539568345323741,
+    "macro avg": {
+      "precision": 0.3837878787878788,
+      "recall": 0.5091503267973856,
+      "f1-score": 0.4286124264600373,
+      "support": 139.0
+    },
+    "weighted avg": {
+      "precision": 0.41876389797253105,
+      "recall": 0.5539568345323741,
+      "f1-score": 0.46709012471469225,
+      "support": 139.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      32,
+      0,
+      19
+    ],
+    [
+      14,
+      0,
+      24
+    ],
+    [
+      4,
+      1,
+      45
+    ]
+  ]
+}
