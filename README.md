@@ -55,3 +55,6 @@ python3 inference/batch_predict.py --model model/match_logreg.pkl --input data/p
 - A `.gitignore` was added to exclude raw data and model pickles; keep large datasets out of source control.
 - `requirements.txt` lists minimal dependencies (`pandas`, `numpy`, `scikit-learn`, `joblib`). Pin versions if you need reproducible environments.
 - Date parsing uses `dayfirst=True` and falls back to `dateutil`; ensure input CSV dates match Football-Data formatting.
+
+NOTE:
+This repo is a learning sandbox to understand the Vertex AI workflow.
